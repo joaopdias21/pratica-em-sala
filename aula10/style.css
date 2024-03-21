@@ -10,3 +10,8 @@ p {
 main div h2 {
     color: brown;
 }
+
+.texto_red{
+    color: red;
+    font-size: 36px;
+}
