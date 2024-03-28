@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    display: inline-block;
+    background-color: pink;
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    margin: 20px;
+}
+
+span{
+    background-color: yellow;
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    margin: 20px;
+
+}
