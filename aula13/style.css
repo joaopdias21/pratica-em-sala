@@ -1,0 +1,78 @@
+div {
+    background-color: pink;
+}
+
+div:hover {
+    background-color: yellow;
+    color: red;
+}
+
+a:hover {
+
+   color: pink;
+   font-size: 20px;
+}
+
+a:active {
+
+    color: yellow;
+}
+
+a:visited{
+    
+    color: green;
+}
+
+input:focus {
+    background-color: deeppink;
+}
+
+li:first-child{
+    color: red;
+}
+
+li:last-child{
+    color: blueviolet;
+}
+
+li:nth-child(4){
+    color: aquamarine;
+}
+
+li:nth-child(2n + 1){
+    background-color: green;
+}
+
+li:not(.diferente){
+    font-size: 25px;
+}
+
+input[type="radio"]:checked{
+    margin-left: 24px;
+}
+
+input[type="checkbox"]:checked{
+    margin-left: 42px;
+}
+
+button{
+    cursor: pointer;
+}
+
+button:disabled{
+    cursor: not-allowed;
+}
+
+input[type="email"]:invalid{
+    background-color: red;
+
+}
+
+input[type="email"]:valid{
+    background-color: chartreuse;
+
+}
+
+input:required{
+    background-color: orange;
+}
