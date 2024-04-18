@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+}
+
+.grade{
+    height: 100vh;
+    display: grid;
+
+    grid-template-areas: 
+
+    "imagem texto texto"
+    "imagem texto texto"
+    ;
+
+    grid-template-columns: 40% 50%;
+    grid-template-rows: 100px 1fr 250px;
+    gap: 16px;
+}
+
+.imagem{
+    background-image: url(imagem1.jpg);
+    height: 400px;
+    width: 400px;
+    margin-left: 20px;
+    grid-area: imagem;
+}
+
+.texto{
+    
+    grid-area: texto;
+}
