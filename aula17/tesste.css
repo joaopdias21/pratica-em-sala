@@ -29,3 +29,30 @@
     
     grid-area: texto;
 }
+
+.flex{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.imagem1{
+    width: 400px;
+    height: 400px;
+    background-image: url(./imagem1.jpg);
+    background-size: cover;
+}
+
+.imagem2{
+    width: 400px;
+    height: 400px;
+    background-image: url(./imagem1.jpg);
+    background-size: cover;
+}
+
+.imagem3{
+    width: 400px;
+    height: 400px;
+    background-image: url(./imagem1.jpg);
+    background-size: cover;
+}
