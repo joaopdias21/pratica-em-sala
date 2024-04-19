@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    padding: 24px;
+    row-gap: 40px;
+    height: 100vh;
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 1fr 200px;
+
+    grid-template-areas: 
+
+    "navEsq header navDir"
+    "paragrafo imgParagrafo imgParagrafo"
+    "footer footer footer"
+    ;
+}
+
+header img, footer img{
+    width: 100px;
+    border-radius: 500px;
+}
+
+header{
+    grid-area: header;
+}
+#imagemParagrafo img{
+    height: 200px;
+}
+
+#nav-esquerda{
+    grid-area: navEsq;
+    /* background-color: blueviolet; */
+}
+
+#nav-direita{
+    grid-area: navDir;
+    /* background-color: chartreuse; */
+}
+
+#nav-esquerda ul, #nav-direita ul{
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#nav-esquerda, #nav-direita{
+    display: flex;
+    align-items: center;
+}
+
+#paragrafo{
+    grid-area: paragrafo;
+    /* background-color: crimson; */
+}
+
+#imagemParagrafo{
+    grid-area: imgParagrafo;
+    /* background-color: darkblue; */
+
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    grid-area: footer;
+    /* background-color: darkorange; */
+
+    border-top: solid 1px black;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media only screen and (max-width: 481px) {
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 100px 1fr 1fr 200px 200px;
+
+        grid-template-areas: 
+
+        "header header"
+        "navEsq navDir"
+        "paragrafo paragrafo"
+        "imgParagrafo imgParagrafo"
+        "footer footer"
+        ;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+}
