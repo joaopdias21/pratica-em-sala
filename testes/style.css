@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    
+    height: 150px;
+    background-color: #A0A59F;
+    list-style-type: none;
+    
+}
+.logo{
+   position: absolute;
+   top: 10px;
+   right: 40px;
+   width: 200px;
+   display: inline-block;
+   border-radius: 30px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+#sobre{
+    font-family: "Rye", serif;
+    text-align: center;
+    position: relative;
+    top: 60px;
+    
+}
+
+.linha-horizontal {
+   
+    border:  2px ridge;
+  }
+  
+.menu{
+    list-style: none;
+    background-repeat: no-repeat;
+    font-family: "Rye", serif;
+    background-color: #A0A59F; 
+}
+
+.menu__item{
+    display: inline-block;
+    position: relative;
+    top: 50px;
+    left: 20px;
+    padding: 10px;
+    
+}
+
+.menu__item:hover{
+    background-color: black;
+    border-radius: 100px;
+    
+}
+
+.submenu{
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    width: 150px;
+    height: 140px;
+    display: none;
+    
+}
+
+.submenu__item{
+    margin-top: 3px;
+}
+
+.submenu:hover{
+    background-color: black;
+
+    
+}
+
+.com-submenu:hover .submenu{
+    text-decoration: none;
+    list-style-type: none;
+    display: block;
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    margin-top: 10px;
+    background-color:#A0A59F
+    
+ 
+}
+
+.submenu__item:hover{
+    background-color: black;
+    border-radius: 100px;
+    padding: 3px;
+}
+
+
+
+.texto_animado{
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 100px;
+    font-family: "Rye", serif;
+    text-align: center;
+    color: black;
+    
+}
+
+.texto_animado span{
+    position: relative;
+}
+
+.texto_animado span::before{
+    content: "";
+    color: white;
+    animation: palavras 20s infinite;
+}
+
+.texto_animado span::after{
+    content: "";
+    position: absolute;
+    height: 35px;
+    border-left: 2px solid white;
+    right: -10px;
+    animation: cursor .8s infinite, digita 20s steps(15) infinite;
+    width: calc(100% + 18px);
+    background-color: black;
+}
+
+@keyframes digita{
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+        width: 0;
+    }
+
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
+        width: calc(100% + 18px);
+    }
+}
+
+@keyframes cursor{
+    0%{
+        border-left: 2px solid black;
+    }
+
+
+}
+
+@keyframes palavras{
+    0%,20%{
+        content: "BY ORDER OF THE PEAKY FUCKING BLINDERS";
+    }
+
+    21%,40%{
+        content: "NINGUEM OLHA PARA TOMAS SHELBY ASSIM";
+    }
+
+    41%,60%{
+        content: "NÃO MEXA COM OS PEAKY BLINDERS";
+    }
+
+    61%,80%{
+        content: "BOM GOSTO É PARA PESSOAS QUE NÃO PODEM PAGAR POR SAFIRAS";
+    }
+
+    81%,100%{
+        content: "TODA RELIGIÃO É UMA RESPOSTA IDIOTA PARA UMA PERGUNTA IDIOTA";
+    }
+}
+
+.grade{
+    display: grid;
+
+    grid-template-areas: 
+
+    "imgArthur texto"
+    
+    ;
+    
+    /* grid-template-rows: 100px 1fr 250px; */
+    
+    
+}
+
+
+ .imagemThomas{
+    grid-area: imgTomas;
+    margin-top: 20px;
+
+}
+
+
+
+.imagemArthur{
+    grid-area: imgArthur;
+    margin-top: 20px;
+
+    
+} 
+
+.h2{
+    grid-area: h2;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+.texto{
+    grid-area: texto;
+    margin-top: 20px;
+    margin-left: 30px;
+
+}
+
+img{
+    grid-area: img;
+    height: 300px;
+    width: 300px; 
+    
+    border: transparent thin solid;
+    
+    
+    border-radius: 200px;
+    border: solid 2px #A0A59F;
+    
+  }
