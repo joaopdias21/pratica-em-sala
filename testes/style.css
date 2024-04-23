@@ -171,47 +171,28 @@ a{
 }
 
 .grade{
-    display: grid;
-
-    grid-template-areas: 
-
-    "imgArthur texto"
-    
-    ;
-    
-    /* grid-template-rows: 100px 1fr 250px; */
-    
+  display: flex;
     
 }
 
-
- .imagemThomas{
-    grid-area: imgTomas;
-    margin-top: 20px;
-
+h2{
+    text-align: center;
+}
+.grade img {
+    height: auto;
+    width: 300px; 
+    margin-right: 20px;
 }
 
+p{
+    display: flex;
+    flex-direction: row;
+   
+}
 
-
-.imagemArthur{
-    grid-area: imgArthur;
-    margin-top: 20px;
 
     
-} 
 
-.h2{
-    grid-area: h2;
-    margin-top: 60px;
-    margin-left: 30px;
-}
-
-.texto{
-    grid-area: texto;
-    margin-top: 20px;
-    margin-left: 30px;
-
-}
 
 img{
     grid-area: img;
