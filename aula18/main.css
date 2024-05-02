@@ -34,12 +34,12 @@ header{
 
 #nav-esquerda{
     grid-area: navEsq;
-    /* background-color: blueviolet; */
+    
 }
 
 #nav-direita{
     grid-area: navDir;
-    /* background-color: chartreuse; */
+    
 }
 
 #nav-esquerda ul, #nav-direita ul{
@@ -56,12 +56,12 @@ header{
 
 #paragrafo{
     grid-area: paragrafo;
-    /* background-color: crimson; */
+    
 }
 
 #imagemParagrafo{
     grid-area: imgParagrafo;
-    /* background-color: darkblue; */
+    
 
     display: flex;
     justify-content: center;
@@ -69,13 +69,22 @@ header{
 
 footer{
     grid-area: footer;
-    /* background-color: darkorange; */
+    
 
     border-top: solid 1px black;
 
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+footer img {
+    position: relative;
+    left: 10px;
+    padding: 5px;
+    width: 30px;
+    height: auto;
+  
 }
 
 @media only screen and (max-width: 481px) {
